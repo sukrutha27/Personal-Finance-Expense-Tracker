@@ -39,7 +39,7 @@ conn.commit()
 
 # 📌 Main App Class
 class FinanceApp:
-    def _init_(self, root):
+    def __init__(self, root):
         self.root = root
         self.root.title("💰 Personal Finance Tracker")
         self.root.geometry("600x500")
@@ -325,7 +325,7 @@ class FinanceApp:
         plt.title("🥧 Expense Distribution")
         plt.show()
 # 📌 Run Application
-if _name_ == "_main_":
+if __name__ == "__main__":
     root = tk.Tk()
     app = FinanceApp(root)
     root.mainloop()
